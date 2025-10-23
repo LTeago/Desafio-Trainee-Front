@@ -31,7 +31,6 @@ body {
 .form-row {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
   flex-wrap: wrap;
   width: 400px;
   margin: 0 auto;
@@ -48,7 +47,7 @@ body {
 }
 
 label {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 600;
   color: #f78520;
   font-size: 20px;
@@ -59,7 +58,7 @@ input {
   border: 2px solid #ccc;
   border-radius: 20px;
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #f78520;
   border-color: #f78520;
 }
@@ -73,13 +72,13 @@ input::placeholder{
 h2 {
   color: #f78520;
   margin-bottom: 20%;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .logotipo{
     width: 245px;
     height: 67.95352172851562px;
-    display: block;            /* garante que ocupe uma linha */
+    display: block;          
   margin-left: 8%;
   margin-top: 30px;
 
@@ -92,7 +91,7 @@ a{
     text-decoration: none;
 }
 
-button{
+button.enviar{
     justify-content:flex-end;
     border:none;
     border-radius: 15px;
@@ -100,6 +99,24 @@ button{
     background-color: #f78520;
     color: white;
     font-size: 15px;
-    padding: 6px 8px;
+    padding: 8px 10px;
     width: auto;
+}
+
+button.voltar{
+  background-color: white;
+  color: #f78520;
+  border-color: #f78520;
+  border: 2px solid #f78520;
+  border-radius: 15px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px;                 
+  margin-top: 15px;
 }
